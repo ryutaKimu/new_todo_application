@@ -12,7 +12,6 @@ const App = () => {
     (async () => {
       try {
         const res = await axios.get(url);
-        console.log(res.data);
         setValue(res.data);
         return;
       } catch (e) {
